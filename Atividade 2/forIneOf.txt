@@ -1,0 +1,15 @@
+ //Atividade: Apresentar a diferença de in e of no for em Javascript. Use o exemplo abaixo como inspiração.
+
+let elementos = ['Água' ,'Fogo' ,'Ar' ,'Terra'];
+for (let indice in elementos){
+    document.write('<p>' + elementos[indice] +'</p>');
+}
+
+//RESPOSTA -> in indica que a variavel indice vai armazenar os indices dos elementos do array de elementos.
+//Entao, elementos[indice] acessa o valor com base no indice.
+
+for (let elemento of elementos){
+    document.write('<p>' + elemento + '</p>');
+}
+
+//RESPOSTA -> of indica o que a variavel elemento vai armazenar diretamente os valores do array "elementos". tornando não necessario acessar o indice.
